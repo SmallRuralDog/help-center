@@ -2,6 +2,7 @@
 
 namespace SmallRuralDog\HelpCenter;
 
+use App\User;
 use Encore\Admin\Extension;
 use SmallRuralDog\HelpCenter\Models\HelpDoc;
 use SmallRuralDog\HelpCenter\Models\HelpWorkOrder;
@@ -51,9 +52,9 @@ class HelpCenter extends Extension
 
     /**
      * 添加工单
-     * @param $content
-     * @param $images
-     * @param $user
+     * @param string $content
+     * @param array $images
+     * @param User $user
      * @param int $p_id
      * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Model
      */
